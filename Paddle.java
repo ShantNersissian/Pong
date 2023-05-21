@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Paddle extends JPanel implements KeyListener {
+public class Paddle {
     int w, h, x, y, speed;
     Color color;
 
@@ -16,10 +16,5 @@ public class Paddle extends JPanel implements KeyListener {
     public void paint(Graphics g) {
         g.setColor(color.WHITE);
         g.fillRect(x, y, w, h);
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-
     }
 }
